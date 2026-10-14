@@ -1,13 +1,13 @@
 import projectLogo from "../assets/mini katolog/proje logo.jpeg";
-import calculatorLogo from "../assets/hesap makinası/6.jpeg";
-import studentManagementLogo from "../assets/öğrenci yönetim sistemi/images.png";
+import calculatorLogo from "../assets/hesap makinası/hesapMakinası.jpeg";
+import studentManagementLogo from "../assets/öğrenci yönetim sistemi/studentmsystem.jpeg";
 import productManagementCover from "../assets/ürün yönetim sistemi/teknik-urun-yonetimi_1588001514.jpg";
-import marketAutomationCover from "../assets/market otomasyonu/market.jpeg";
-import personelVeriTestCover from "../assets/personel veri test/1.png";
+import marketAutomationCover from "../assets/market otomasyonu/marketoutamation.jpeg";
+import personelVeriTestCover from "../assets/personel veri test/personeldata.jpeg";
 
 const projects = [
   {
-    title: "Mini Katolog",
+    title: "Mini Catalog",
     image: projectLogo,
     alt: "Shoply uygulamasının logosu",
     href: "/mini-katolog",
@@ -15,45 +15,46 @@ const projects = [
       "A product catalog experience with product browsing, details, and account screens.",
   },
   {
-    title: "Hesap Makinesi",
+    title: "Calculator",
     image: calculatorLogo,
-    alt: "Hesap makinesi uygulamasının logosu",
+    alt: "Calculator app logo",
+    imageClassName: "home-project-image-contain",
     href: "/hesap-makinesi",
     description:
       "A calculator application with a straightforward interface for everyday calculations.",
   },
   {
-    title: "Öğrenci Yönetim Sistemi",
+    title: "Student Management System",
     image: studentManagementLogo,
-    alt: "Öğrenci Yönetim Sistemi proje logosu",
+    alt: "Student management system project logo",
     imageClassName: "home-project-image-contain",
     href: "/ogrenci-yonetim-sistemi",
     description:
       "A student records application with CRUD operations, filtering, validation, and pagination.",
   },
   {
-    title: "Ürün Yönetim Sistemi",
+    title: "Product Management System",
     image: productManagementCover,
-    alt: "Ürün Yönetim Sistemi teknik ürün yönetimi logosu",
+    alt: "Technical product management logo",
     imageClassName: "home-project-image-contain",
     href: "/urun-yonetim-sistemi",
     description:
       "A product management project focused on organizing and maintaining product records.",
   },
   {
-    title: "Market Otomasyonu",
+    title: "Market Automation",
     image: marketAutomationCover,
-    alt: "Market otomasyonunda kullanılan kasa ve dokunmatik ekranlar",
-    imageClassName: "home-project-image-cover",
+    alt: "Checkout and touchscreens used in the market automation system",
+    imageClassName: "home-project-image-contain",
     href: "/market-otomasyonu",
     description:
       "A Java checkout workflow for product selection, pricing, and payment processing.",
   },
   {
-    title: "Personel Veri Test",
+    title: "Personnel Data Test",
     image: personelVeriTestCover,
-    alt: "Personel veri test ekranı",
-    imageClassName: "home-project-image-cover",
+    alt: "Personnel data test screen",
+    imageClassName: "home-project-image-contain",
     href: "/personel-veri-test",
     description:
       "A Windows Forms and SQL Server application for viewing and managing personnel records.",

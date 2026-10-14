@@ -17,12 +17,12 @@ const pageTitles: Record<string, string> = {
   "/about": "About",
   "/work": "Work",
   "/my-resume": "Resume",
-  "/mini-katolog": "Mini Katolog",
-  "/hesap-makinesi": "Hesap Makinesi",
-  "/ogrenci-yonetim-sistemi": "Öğrenci Yönetim Sistemi",
-  "/urun-yonetim-sistemi": "Ürün Yönetim Sistemi",
-  "/market-otomasyonu": "Market Otomasyonu",
-  "/personel-veri-test": "Personel Veri Test",
+  "/mini-katolog": "Mini Catalog",
+  "/hesap-makinesi": "Calculator",
+  "/ogrenci-yonetim-sistemi": "Student Management System",
+  "/urun-yonetim-sistemi": "Product Management System",
+  "/market-otomasyonu": "Market Automation",
+  "/personel-veri-test": "Personnel Data Test",
 };
 
 function App() {
@@ -34,17 +34,17 @@ function App() {
       <Navbar activePage={activePage} />
       {activePage === "Home" ? (
         <Home />
-      ) : activePage === "Mini Katolog" ? (
+      ) : activePage === "Mini Catalog" ? (
         <MiniCatalog />
-      ) : activePage === "Hesap Makinesi" ? (
+      ) : activePage === "Calculator" ? (
         <Calculator />
-      ) : activePage === "Öğrenci Yönetim Sistemi" ? (
+      ) : activePage === "Student Management System" ? (
         <StudentManagement />
-      ) : activePage === "Ürün Yönetim Sistemi" ? (
+      ) : activePage === "Product Management System" ? (
         <ProductManagement />
-      ) : activePage === "Market Otomasyonu" ? (
+      ) : activePage === "Market Automation" ? (
         <MarketAutomation />
-      ) : activePage === "Personel Veri Test" ? (
+      ) : activePage === "Personnel Data Test" ? (
         <PersonelVeriTest />
       ) : activePage === "Work" ? (
         <Work />

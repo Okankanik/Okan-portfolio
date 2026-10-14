@@ -47,7 +47,7 @@ function Navbar({ activePage }: { activePage: string }) {
             </svg>
           </a>
           <a
-            href="mailto:YOUR_EMAIL@example.com"
+            href="mailto:okankanik04@gmail.com"
             aria-label="Gmail"
             title="Gmail"
           >
