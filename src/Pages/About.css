@@ -1,0 +1,134 @@
+.portfolio-about {
+  max-width: 840px;
+  margin: 0 auto;
+  padding-top: 144px;
+  padding-bottom: 56px;
+}
+
+.about-hero {
+  width: 100%;
+}
+
+.about-heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.04em;
+  margin: 0;
+  color: #f5f5f5;
+  font-size: clamp(4.3rem, 8vw, 8rem);
+  line-height: 0.95;
+  letter-spacing: -0.08em;
+  font-weight: 600;
+}
+
+.about-letter {
+  display: inline-block;
+}
+
+.about-intro {
+  max-width: 900px;
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.1rem;
+  line-height: 1.38;
+  letter-spacing: -0.01em;
+}
+
+.about-photo-wrapper {
+  position: relative;
+  margin-top: 38px;
+}
+
+.about-photo-frame {
+  position: relative;
+  aspect-ratio: 1.32;
+  max-width: 780px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #6a6a6a, #a5a5a5 35%, #dadada 62%, #7c7c7c);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+}
+
+.about-photo-frame img,
+.photo-placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  background: linear-gradient(135deg, #3a3a3a, #7b7b7b 55%, #d0d0d0);
+}
+
+.about-photo-frame img {
+  filter: grayscale(1);
+}
+
+.about-copy {
+  margin-top: 28px;
+}
+
+.about-copy p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about-copy p + p {
+  margin-top: 18px;
+}
+
+.about-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 46px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.about-footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.about-footer-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.about-footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.about-footer-links a:hover {
+  color: #ff8733;
+}
+
+@media (max-width: 720px) {
+  .portfolio-about {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+
+  .about-photo-frame {
+    aspect-ratio: 1.05;
+  }
+
+  .about-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

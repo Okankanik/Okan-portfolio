@@ -1,0 +1,196 @@
+.mini-catalog-page {
+  padding-top: 140px;
+}
+
+.student-management-page {
+  max-width: 1080px;
+}
+
+.mini-catalog-back {
+  display: inline-block;
+  margin-bottom: 32px;
+  color: #c8c8c8;
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mini-catalog-back:hover {
+  color: #ff8733;
+}
+
+.mini-catalog-intro {
+  max-width: 680px;
+  margin-bottom: 48px;
+}
+
+.mini-catalog-eyebrow {
+  margin: 0 0 10px;
+  color: #ff8733;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.mini-catalog-intro h1 {
+  margin: 0;
+  color: #f1f1f1;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.mini-catalog-intro > p:last-child {
+  margin: 18px 0 0;
+  color: #c8c8c8;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.mini-catalog-gallery {
+  display: grid;
+  gap: 48px;
+}
+
+.mini-catalog-item {
+  min-width: 0;
+}
+
+.mini-catalog-image {
+  display: flex;
+  min-height: 260px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px;
+  background: #151518;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+}
+
+.mini-catalog-image img {
+  display: block;
+  max-width: 100%;
+  max-height: 640px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.mini-catalog-item:first-child .mini-catalog-image img {
+  width: min(100%, 360px);
+}
+
+.student-management-page .mini-catalog-image img {
+  width: 100%;
+  max-height: none;
+}
+
+.student-management-page .mini-catalog-item:first-child .mini-catalog-image {
+  padding: 0;
+}
+
+.student-management-page .mini-catalog-item:first-child .mini-catalog-image img {
+  width: 100%;
+}
+
+.product-management-page .mini-catalog-item:first-child .mini-catalog-image img {
+  width: 100%;
+  max-height: none;
+}
+
+.market-automation-page .mini-catalog-image {
+  min-height: 0;
+  padding: 0;
+}
+
+.market-automation-page .mini-catalog-image img {
+  width: 100%;
+  max-height: none;
+}
+
+.market-automation-page .mini-catalog-item:first-child .mini-catalog-image {
+  aspect-ratio: auto;
+}
+
+.market-automation-page .mini-catalog-item:first-child .mini-catalog-image img {
+  height: auto;
+}
+
+.personel-veri-test-page .mini-catalog-image {
+  min-height: 0;
+  padding: 0;
+}
+
+.personel-veri-test-page .mini-catalog-image img {
+  width: 100%;
+  max-height: none;
+}
+
+.personel-veri-test-page .mini-catalog-item:first-child .mini-catalog-image img {
+  width: 100%;
+}
+
+.mini-catalog-caption {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.mini-catalog-number {
+  padding-top: 2px;
+  color: #ff8733;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mini-catalog-caption h2 {
+  margin: 0;
+  color: #f1f1f1;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.mini-catalog-caption p {
+  max-width: 650px;
+  margin: 8px 0 0;
+  color: #bdbdbd;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+@media (max-width: 600px) {
+  .mini-catalog-page {
+    padding-top: 112px;
+  }
+
+  .mini-catalog-intro {
+    margin-bottom: 36px;
+  }
+
+  .mini-catalog-intro h1 {
+    font-size: 36px;
+  }
+
+  .mini-catalog-intro > p:last-child {
+    font-size: 16px;
+  }
+
+  .mini-catalog-gallery {
+    gap: 36px;
+  }
+
+  .mini-catalog-image {
+    min-height: 200px;
+    padding: 12px;
+  }
+
+  .mini-catalog-image img {
+    max-height: 520px;
+  }
+
+  .mini-catalog-caption {
+    grid-template-columns: 32px minmax(0, 1fr);
+    margin-top: 14px;
+  }
+}

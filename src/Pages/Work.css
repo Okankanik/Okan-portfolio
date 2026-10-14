@@ -1,0 +1,128 @@
+.work-page {
+  max-width: 840px;
+  padding-top: 180px;
+}
+
+.work-intro {
+  margin-bottom: 24px;
+}
+
+.work-intro h1 {
+  margin: 0;
+  color: #f1f1f1;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.work-intro p {
+  max-width: 680px;
+  margin: 54px 0 24px;
+  color: #c8c8c8;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.work-projects > h2 {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #59341f;
+  color: #f1f1f1;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.work-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 20px;
+  margin-top: 32px;
+}
+
+.work-project-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 4px solid #ff8733;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 180ms ease-out;
+}
+
+.work-project-card:hover {
+  transform: translateY(-4px);
+}
+
+.work-project-card:focus-visible {
+  outline: 2px solid #f1f1f1;
+  outline-offset: 5px;
+}
+
+.work-project-image {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #151518;
+}
+
+.work-project-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-project-image img.home-project-image-contain {
+  object-fit: contain;
+  background: #fff;
+}
+
+.work-project-caption {
+  min-height: 92px;
+  padding: 14px 16px;
+  background: #101012;
+  text-align: center;
+}
+
+.work-project-caption h3 {
+  margin: 0;
+  color: #f1f1f1;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.work-project-caption p {
+  margin: 8px 0 0;
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .work-page {
+    padding-top: 120px;
+  }
+
+  .work-intro h1 {
+    font-size: 48px;
+  }
+
+  .work-intro p {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+
+  .work-projects > h2 {
+    font-size: 26px;
+  }
+
+  .work-project-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-project-card {
+    transition: none;
+  }
+}
